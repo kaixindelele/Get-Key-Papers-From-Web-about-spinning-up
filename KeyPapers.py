@@ -55,6 +55,8 @@ def get_pdf_direct(web_site, path):
 
 
 def main():
+	import time
+	start_time = time.time()
     # 需要加入你的根目录
 
     root_dir = os.getcwd() + r"\url_txt.txt"
@@ -134,6 +136,7 @@ def main():
     
     print("failed list", failed_list)
     print("success count", success_count)
+	print("total time:", time.time() - start_time)
     fileObject = open('Failed List.txt', 'w')
     for ip in failed_list:
         fileObject.write(str(ip))
