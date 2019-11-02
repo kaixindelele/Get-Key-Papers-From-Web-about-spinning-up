@@ -65,14 +65,15 @@ def main():
     
     # 先创建总的文件夹
     try:
-        os.mkdir(txt_content[0])
+        main_flie = txt_content[0]
+        os.mkdir(main_flie)
     except Exception as e:
         print(e)
     
     class_file = txt_content[0] + "/" + txt_content[1] + "/"
     print("current file", class_file)
     
-    for index, line in enumerate(txt_content[2:]):
+    for index, line in enumerate(txt_content[1:]):
         # print(index, line)
         # 再根据数字创建子文件夹
         if line[0].isdigit():
@@ -80,14 +81,12 @@ def main():
             class_file = txt_content[0] + "/" + line + "/"
             paper_class_file = class_file
             try:
-                os.mkdir(class_file)                
+                os.mkdir(paper_class_file)                
             except Exception as e:
                 print(e)
-        # 如果是字母,则
-        if line[0].isalpha():
-            print("current file", class_file)
-            paper_class_file = class_file + line + "/"
-            print("paper_class_file:", paper_class_file)
+        # 如果是字母,则创建子文件夹，并更新paper file
+        if line[0].isalpha():            
+            paper_class_file = class_file + line + "/"            
             try:
                 os.mkdir(paper_class_file)
             except Exception as e:
