@@ -1,0 +1,5 @@
+[28, 'Key Papers in Deep RL/1. Model-Free RL/g. Other Directions for Combining Policy-Learning and Q-Learning/', 'https://arxiv.org/abs/1704.04651']
+[30, 'Key Papers in Deep RL/1. Model-Free RL/g. Other Directions for Combining Policy-Learning and Q-Learning/', 'https://arxiv.org/abs/1704.06440']
+[76, 'Key Papers in Deep RL/8. Scaling RL/', 'https://arxiv.org/abs/1712.09381>`_, Liang et al, 2017. **Contribution:** A scalable library of RL algorithm implementations. `Documentation link. <https://ray.readthedocs.io/en/latest/rllib.html']
+[91, 'Key Papers in Deep RL/11. Imitation Learning and Inverse Reinforcement Learning/', 'https://arxiv.org/abs/1810.00821']
+[96, 'Key Papers in Deep RL/12. Reproducibility, Analysis, and Critique/', 'https://arxiv.org/abs/1810.02525']

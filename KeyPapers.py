@@ -91,10 +91,11 @@ def main():
             except Exception as e:
                 print(e)
 
-        if line[:2] == "..":
+        if line[:2] == "..":           
             paper_name = re.findall(r'`.* <', line)[0][1:-1]
-            # 先去掉不能当文件名的冒号
-            paper_name = paper_name.replace(r':', '-')
+            # 先去掉不能当文件名的特殊字符
+            rstr = r"[\/\\\:\*\?\"\<\>\|]"
+            paper_name = re.sub(rstr, "-", paper_name)
             try:
                 paper_author = re.findall(r"_, .*, \d", line)[0][3:-3]
                 if paper_author[-5:] == "et al":
@@ -109,7 +110,7 @@ def main():
             print(paper_count, " end_save_path:", end_save_path)
 
             # 这里可以指定下载哪个出现问题的文件。
-            if paper_count > 0:
+            if paper_count in [28, 30, 76, 91, 96, 97,]:
                 # 处理一个积极拒绝爬虫的报错
                 try:
                     if paper_url[-4:] == ".pdf":
