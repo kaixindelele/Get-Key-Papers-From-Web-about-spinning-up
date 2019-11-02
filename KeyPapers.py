@@ -68,10 +68,7 @@ def main():
         main_flie = txt_content[0]
         os.mkdir(main_flie)
     except Exception as e:
-        print(e)
-    
-    class_file = txt_content[0] + "/" + txt_content[1] + "/"
-    print("current file", class_file)
+        print(e)   
     
     for index, line in enumerate(txt_content[1:]):
         # print(index, line)
