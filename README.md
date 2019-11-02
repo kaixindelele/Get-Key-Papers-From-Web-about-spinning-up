@@ -1,6 +1,8 @@
 # Get-Key-Papers-From-Web-about-spinning-up
 Get Key Papers From Web about spinning up with python
 
+**有帮助的话，欢迎star~**
+
 原文链接：
 https://spinningup.openai.com/en/latest/spinningup/keypapers.html
 
@@ -20,4 +22,3 @@ TXT文件是网友提供的整理链接；
 python KeyPapers.py
 
 
-有帮助的话，欢迎star~
